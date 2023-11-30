@@ -1,0 +1,40 @@
+body{
+    background: #ff0000;
+    margin: 0px;
+    position: relative;
+}
+.parent1{
+    background-color: #0000ff;
+    height: 500px;
+    width: 500px;
+    padding: 100px 0px 0px 100px;
+    position: relative;
+    
+}
+.parent2{
+    background-color: #ffffff;
+    height: 500px;
+    width: 500px;
+    padding: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.child{
+    background: #00ff00;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+
+}
+.child2{
+    background: #00d5ff;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+
+}

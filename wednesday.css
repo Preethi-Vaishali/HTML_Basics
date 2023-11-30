@@ -1,0 +1,17 @@
+body{
+    background: #15eba3;
+    position: relative;
+}
+.parent{
+    background-color: #62cde7;
+    height: 1000px;
+    width: 500px;
+    padding: 100px;
+    position: relative;
+}
+.child{
+    background: #a262e7;
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
