@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 20px;
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+
+    .top-bar {
+      width: 100%;
+      background-color: #222;
+      color: #fff;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  </style>
+  <title>Fixed Sidebar and Top Bar with Vertical Scroll</title>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <!-- Sidebar content goes here -->
+      <p>Sidebar Content</p>
+    </div>
+    <div class="main-content">
+      <div class="top-bar">
+        <!-- Top bar content goes here -->
+        <p>Top Bar Content</p>
+      </div>
+      <!-- Main content goes here -->
+      <p>Main Content</p>
+      <!-- Add more elements as needed -->
+    </div>
+  </div>
+</body>
+</html>

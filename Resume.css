@@ -1,0 +1,72 @@
+*{
+    margin: 50px;
+    position: relative;
+}
+.name{
+    margin: 20px;
+    text-align: center;
+}
+img{
+    height: 100px;
+    width: 100px;
+    margin: 20px 0px 0px 900px;
+    position: absolute;
+    top: 40px;
+}
+#carrer{
+    margin-left: 0px;
+    position: relative;
+}
+body {
+    border: 5px double ;
+    }
+.small {
+        line-height: 1.7;
+      }
+    .tr1{
+        background: #ccc;
+    }
+    .tr2{
+        background: #fff;
+    }
+    td{
+        text-align: center;
+    }
+    tr{
+        text-align: center;
+    }
+    td {
+        border: 1px solid black;
+        padding: 10px;
+        margin-left: 5px;
+      }
+      table{
+        margin-left: 70px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .tick{
+            list-style: none;
+          }
+          
+          .tick li:before {
+            content: '✓';
+          }
+
+      .asterisk{
+        list-style: none;
+      }
+      .asterisk li:before {
+        content: '*';
+      }
+      
+      .triangle{
+        list-style: none;
+      }
+      .triangle li:before {
+        content: '';
+      }
+      p{
+        line-height: 0px;
+        padding-top: 5px;
+      }
