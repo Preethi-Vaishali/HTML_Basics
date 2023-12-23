@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function arrayFilter(){
+                let arr = [2, 3, 7, 9, 8, 5, 6, 4, 3, 5,6];
+             
+                let evenArray = arr.filter(n=> (n%2) == 0);
+                let oddArray = arr.filter(n=> (n%2) == 1);
+
+                let mapArray = arr.map(e=> e*2);
+                alert(`Multiplies of 2: ${mapArray}`);
+
+
+                alert(`Even Number: ${evenArray}`);
+                alert(`Odd Number: ${oddArray}`);
+
+                let n = 567;
+                if((n%2) == 0 )
+                alert("Even Number");
+                else
+                alert("Odd Number");
+            }
+            arrayFilter();
+        </script>
+
+    </head>
+    <body>
+
+    </body>
+</html>

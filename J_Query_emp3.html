@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>
+                
+        </script>
+        <style>
+            .box, .box2{
+                width: 200px;
+                height: 100px;
+                background-color: aqua;
+                color: #ffffff;
+                font-size: 2em;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">Hello</div>
+        <div class="box2">World</div>
+        <input type="text" placeholder="Test" name="test" class="testInput"/>
+       
+        <script>
+           // $(".box").click(boxClick());
+
+            $(".box").click(function(){
+                $(".box2").css("visibility", "visible");
+               
+            });
+            $(".box2").on("click" , function(){
+                $(".box2").css("visibility", "hidden");
+                $(".box2").css("background-color", "green");
+                $(".testInput").change();
+               
+            });
+            $(".testInput").on("change",function(){
+                alert("On change");
+                console.log(""+$(".testInput").val());
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Intro</title>
+        <script>
+            function add(){
+                var a = document.getElementById("inputa").value;
+                var b = document.getElementById("inputb").value;
+                var c = Number(a) + Number(b);
+                    document.getElementById("result").innerHTML = c;    
+            }
+        </script>
+    </head>
+    <body>
+        <input type="number" id="inputa" placeholder="Enter A" value="2" />
+        <br>
+        <input type="number" id="inputb" placeholder="Enter B"/>
+        <br>
+        <button type="button" onclick="add()">Add</button>
+        <br>
+        <div id="result">Submit Result</div>
+    </body>
+</html>

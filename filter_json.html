@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function arrayFilter(){
+                let json = {"data" : [
+                            {"name":"Vaishali", "age":24, "gender":"Female"},
+                            {"name":"Karthik", "age":29, "gender":"Male"},
+                            {"name":"Abarna", "age":24, "gender":"Female"},
+                            {"name":"Raj", "age":27, "gender":"Male"},
+                            {"name":"Padmashri", "age":14, "gender":"Female"},
+                            {"name":"Mahendran", "age":23, "gender":"Male"},
+                            {"name":"Raghavan", "age":24, "gender":"Male"},
+                            {"name":"Krishnamurthy", "age":80, "gender":"Male"},
+                            {"name":"Venkat", "age":16, "gender":"Male"},
+                            {"name":"Vijayalakshmi", "age":79, "gender":"Female"},
+                ] }
+                
+                kidsArray = json.data.filter(mano => mano.age < 18 && mano.gender === "Female");
+                alert(`Kids ${JSON.stringify(kidsArray)}`);
+
+                kids1Array = json.data.filter(user => user.age < 18);
+                alert(`Kids ${JSON.stringify(kids1Array)}`);
+
+                AdultArray = json.data.filter(user => user.age > 18 && user.age < 60);
+                alert(`Adult ${JSON.stringify(AdultArray)}`);
+
+                SeniorArray = json.data.filter(user => user.age > 60);
+                alert(`Senior ${JSON.stringify(SeniorArray)}`);
+
+                mapArray = json.data.map(user => `${user.name} ${user.age}/${user.gender.substring(0,1).toUpperCase()}` );
+                alert(`Map ${mapArray}`);
+            }
+            arrayFilter();
+        </script>
+
+    </head>
+    <body>
+
+    </body>
+</html>
