@@ -107,13 +107,13 @@ body {
 
 /*in contact info li font color*/
 .contactInfo ul li span {
-  color: #dbd8d8;
+  color: #0aadbc;
   font-weight: 300px;
 
 }
 
 .contactInfo ul li a {
-  color: rgb(243, 239, 239);
+  color: #0aadbc;
   font-size: 20px;
   padding-left: 10px;
 }
@@ -128,17 +128,25 @@ body {
 
 .Skills .title {
   /*skill title space and gaps */
-  color: rgb(78, 154, 116);
+  color: rgb(219, 163, 41);
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
-  padding-left: 20px;
+  padding-left: 0px;
+}
+.Carrer_objective .title {
+  color: rgb(219, 163, 41);
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-left: 0px;
+  font-size: 22px;
+  
 }
 
 .Skills ul {
   /*under skill title space*/
   position: relative;
-  padding-left: 60px;
+  padding-left: 40px;
 }
 
 .Skills ul li {
@@ -151,16 +159,14 @@ body {
 .Certificate {
   padding-top: 15px;
   font-size: 20px;
-  /* position:inherit ; */
 }
 
 .Certificate .title {
-  /* skill title space and gaps */
-  color: rgb(78, 154, 116);
+  color: rgb(219, 163, 41);
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
-  padding-left: 30px;
+  padding-left: 0px;
   margin-left: 1px;
   margin-top: 5px;
   /* Adjust the top margin to reduce space */
@@ -177,27 +183,23 @@ body {
   /* under skill title space */
   position: relative;
   padding-top: 5px;
-  padding-left: 70px;
+  padding-left: 40px;
 }
 
 .Certificate ul li {
   position: relative;
-  padding-top: 15px;
-  padding-left: 5px;
-  color: #dbd8d8;
+  padding-top: 5px;
+  padding-left: 0px;
+  color: aliceblue;
 }
 
 .Certificate ul li p {
   /* space bt title and des para */
-  padding-top: 15px;
+  padding-top: 0px;
   position: relative;
   color: #dbd8d8;
 }
 
-.Certificate ul span {
-  padding-left: 5px;
-  color: cornflowerblue;
-}
 
 /*rigt side content declaring*/
 .container .right_side {
@@ -240,8 +242,10 @@ body {
   font-size: 20px;
   font-weight: 500;
   padding-bottom: 25px;
-  border-bottom: 5px solid rgba(23, 9, 9, 0.2);
+  border-bottom: 5px solid #c1bebe9e;
+  color: #ffffff;
 }
+
 
 /*Education*/
 .Academiccredential ul {

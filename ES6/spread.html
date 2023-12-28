@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let arr = [1,2,3,4,5,6];
+            let arr1 = [7,8,9,10,11,12];
+            console.log(...arr);
+            console.log(arr+","+arr1);
+            let mergeArr =[...arr,...arr1];
+            console.log(...mergeArr);
+
+            const add = (a,b,c,d)=>{return a+b+c+d};
+            console.log("Normal add: "+add(2,5,6,7));
+
+            const spreadAdd = (...a)=>{
+                let c = 0;
+                //ES6 for loop
+                for ( val of a){
+                    c = c+val;
+                }
+                return c;
+                //or
+                //a.forEach(val =>{c = c+val})
+            };
+            console.log("Spread add: "+spreadAdd(2,5,6,7,6.5,9,3));
+            console.log("Spread add: "+spreadAdd(...arr, ...arr1));
+
+            const spreadSub = (...a)=>{
+                let c=0;
+                for (let val of a){
+                    c = val-c;
+                }
+                return c;
+            };
+            console.log("Spread Sub: "+spreadSub(20,30,40,50,60));
+
+            const spreadMul = (...a)=>{
+                let c = 1;
+                for (let val of a){
+                    c = val*c;
+                }
+                return c;
+            };
+            console.log("Spread mul: "+spreadMul(20,30,40,50,60));
+
+            const spreadDiv = (...a)=>{
+                let c = 1;
+                for (let val of a){
+                    c = val/c;
+                }
+                return c;
+            };
+            console.log("Spread Div: "+spreadDiv(20,30,40,50,60));
+            
+        </script>
+    </head>
+</html>
